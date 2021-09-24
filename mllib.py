@@ -1,5 +1,5 @@
-import pandas as pd
 # build correlation matrix
+import pandas as pd
 def get_correlation(df, threshold):
     '''
     args: dataframe, threshold
@@ -16,7 +16,6 @@ def get_correlation(df, threshold):
 
 # check  metric of the model
 from sklearn.metrics import accuracy_score, confusion_matrix, recall_score
-
 def model_check(y_true, y_pred, model, output ='accuracy'): 
     '''
     returns selected metric
@@ -43,3 +42,15 @@ def get_time(val,form='%Y-%m-%d %H:%M:%S'):
         return datetime.utcfromtimestamp(val).strftime(form)
     except:
         return val
+    
+# transform values
+def transform(X,tparameter,transformation='shift'):
+    '''
+    return transformed values according to chosen transformation
+    '''
+    if transformation == 'shift':
+        result =  X + tparameter 
+        return result
+    elif transformation == 'exponent':
+        result = tparameter**X 
+        return result
