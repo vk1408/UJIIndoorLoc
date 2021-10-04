@@ -1,7 +1,18 @@
 Indoor localization problem using a WLAN fingerprint-based method.
 
-Attribute Information:
+Description: multiple Wap Access Points (WAP) are located in 3 buildings at different floors.
+The signals of these WAPs are measured with smartphone by different users.
+In this project I used various machine learning models to predict indoor position of a user:
+    1. Building, floor (classification task)
+    2. Longitude and latitude (regression task)
+    
+Methods used:
+    - Building and floor prediction: Decision Tree, K Nearest Neighbors, Logistic Regression, Random Forest, SUpport Vector machines
+    - Longitude and latitude: Random Forest Regressor, K Nearest Neighbors Regressor, Decision Tree Regressor
 
+Original datasets: https://archive.ics.uci.edu/ml/datasets/ujiindoorloc#
+
+Features:
 Attribute 001 (WAP001): Intensity value for WAP001. Negative integer values from -104 to 0 and +100. Positive value 100 used if WAP001 was not detected.
 ....
 Attribute 520 (WAP520): Intensity value for WAP520. Negative integer values from -104 to 0 and +100. Positive Vvalue 100 used if WAP520 was not detected.
