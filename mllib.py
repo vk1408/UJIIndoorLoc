@@ -54,3 +54,18 @@ def transform(X,tparameter,transformation='shift'):
     elif transformation == 'exponent':
         result = tparameter**X 
         return result
+    
+# get outlier limits
+import numpy as np
+def getOutlierLimits(data):
+    '''
+    return lower and higher limits for outliers
+    '''
+    Q3 = np.quantile(data, 0.75)
+    Q1 = np.quantile(data, 0.25)
+    IQR = Q3 - Q1
+    lower_range = Q1 - 1.5 * IQR
+    upper_range = Q3 + 1.5 * IQR
+    return lower_range,upper_range
+    
+
