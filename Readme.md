@@ -1,14 +1,18 @@
 Indoor localization problem using a WLAN fingerprint-based method.
 
 Description: multiple Wap Access Points (WAP) are located in 3 buildings at different floors.
-The signals of these WAPs are measured with smartphone by different users.
+The signals of these WAPs were measured with smartphone by different users. As result two datasets (.csv) were created:
+trainingData and validationData.
 
-In this project I used various machine learning models to predict indoor position of a user:
+In this project I used various machine learning models to predict indoor position of a user based on provided datasets:
 
     1. Building, floor (classification task)
     
     2. Longitude and latitude (regression task)
-    
+
+![task_description](https://user-images.githubusercontent.com/84286885/137634394-23905de9-9022-4d6e-8e1b-7f5d0aaaea03.jpg)
+
+   
 Methods used:
 
     - Building and floor prediction: Decision Tree, K Nearest Neighbors, Logistic Regression, Random Forest, SUpport Vector machines
@@ -17,7 +21,7 @@ Methods used:
 
 Original datasets: https://archive.ics.uci.edu/ml/datasets/ujiindoorloc#
 
-Features:
+Feature description:
 
     - Attribute 001 (WAP001): Intensity value for WAP001. Negative integer values from -104 to 0 and +100. Positive value 100 used if WAP001 was not detected.
 
