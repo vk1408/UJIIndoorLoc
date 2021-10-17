@@ -16,7 +16,7 @@ In this project I used various machine learning models to predict indoor positio
 Methods used:
 
     - Building and floor prediction: Decision Tree, K Nearest Neighbors, Logistic Regression, Random Forest, SUpport Vector machines
-    
+   
     - Longitude and latitude: Random Forest Regressor, K Nearest Neighbors Regressor, Decision Tree Regressor
 
 Original datasets: https://archive.ics.uci.edu/ml/datasets/ujiindoorloc#
@@ -37,13 +37,15 @@ Feature description:
     - Attribute 529 (Timestamp): UNIX Time when the capture was taken. Integer value.
     
    There are 5 Jupiter Notebooks in this project:
+   
     - clean_data.ipynb
     - transform_data.ipynb
     - crossvalidation.ipynb
     - model.ipynb
     - visualization.ipynb
+    
    After execution of each notebook some .csv files are generated in order to be used at the next notebook:
-   ![image](https://user-images.githubusercontent.com/84286885/137634687-118895cb-f811-4e3a-8338-b2273d9265b7.png)
+![image](https://user-images.githubusercontent.com/84286885/137634816-494a00a0-09cf-457c-842f-08cd8ac7e5f0.png)
 
    
     
